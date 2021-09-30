@@ -3,7 +3,7 @@ int main(){
 int a[5000]={0},b[5000]={0},c[5000]={0};
  a[0]=0,b[0]=1;
 int la=1,lb=1,lc=1;
-int n,i,k,j,t,x,y,carry=0;
+int n,i,k,j,x,y,carry=0;
 printf("Enter the number n for displaying nth fibonacci number\n");
 scanf("%d",&n);
 if(n==1){
@@ -15,7 +15,7 @@ else if(n==2){
 else{
 for(y=0;y<n-2;y++){
     
-    la=lb;lb=lc;t=lb-la-1;
+    la=lb;lb=lc;
     int l=lb,m=la;
     if(lb>la){
         for(i=la;i>=0;i--){
